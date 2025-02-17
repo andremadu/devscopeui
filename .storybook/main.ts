@@ -3,7 +3,7 @@ import type { StorybookConfig } from "@storybook/react-vite";
 const config: StorybookConfig = {
   stories: [
     "../src/**/*.mdx",
-    "../src/components/**/*.stories.@(js|jsx|mjs|ts|tsx)", // Corrigido
+    "../src/components/**/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
 
   addons: [
@@ -18,7 +18,14 @@ const config: StorybookConfig = {
   },
 
   docs: {
-    autodocs: false, // Para evitar possíveis erros de documentação automática
+    autodocs: false,
+  },
+
+  async viteFinal(config) {
+    config.define = {
+      'process.env': {}, // Define process.env como um objeto vazio
+    };
+    return config;
   },
 };
 
