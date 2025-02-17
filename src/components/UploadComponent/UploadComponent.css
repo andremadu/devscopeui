@@ -1,0 +1,46 @@
+/* Especificar o componente de upload */
+.upload-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload-container input {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.upload-container button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-container button:hover {
+  background-color: #45a049;
+}
+
+.upload-container .alert {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.upload-container .success {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.upload-container .error {
+  background-color: #f44336;
+  color: white;
+}
