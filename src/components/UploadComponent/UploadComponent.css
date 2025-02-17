@@ -1,38 +1,74 @@
-/* Especificar o componente de upload */
+/* Estilo para o componente de upload */
 .upload-container {
+  max-width: 600px; /* Limita a largura máxima */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 30px;
+  background-color: #ffffff; /* Cor de fundo mais limpa */
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombras mais suaves */
   text-align: center;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave ao focar */
+}
+
+.upload-container:hover {
+  transform: translateY(-5px); /* Animação ao passar o mouse */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Sombras mais intensas ao passar o mouse */
+}
+
+.upload-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333333;
 }
 
 .upload-container input {
-  padding: 10px;
-  border-radius: 5px;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
   margin-top: 20px;
-  width: 80%;
-  max-width: 400px;
+  width: 100%;
+  max-width: 450px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.upload-container input:focus {
+  border-color: #4CAF50; /* Cor do border ao focar */
+  outline: none;
 }
 
 .upload-container button {
-  margin-top: 20px;
-  padding: 10px 20px;
+  margin-top: 30px;
+  padding: 12px 30px;
   background-color: #4CAF50;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .upload-container button:hover {
   background-color: #45a049;
+  transform: translateY(-3px); /* Efeito ao passar o mouse */
+}
+
+.upload-container button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Foco visível para acessibilidade */
 }
 
 .upload-container .alert {
-  padding: 10px;
+  padding: 15px;
   margin-top: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: opacity 0.3s ease;
 }
 
 .upload-container .success {
@@ -43,4 +79,24 @@
 .upload-container .error {
   background-color: #f44336;
   color: white;
+}
+
+.upload-container .info {
+  background-color: #2196F3; /* Cor de alerta informativo */
+  color: white;
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+  .upload-container {
+    padding: 20px;
+  }
+
+  .upload-container input {
+    width: 90%; /* Ajuste no campo de input para dispositivos menores */
+  }
+
+  .upload-container button {
+    width: 90%; /* Botão também ajustado para responsividade */
+  }
 }
