@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './UploadComponent.css';  // Aqui importa o arquivo CSS
+import './UploadComponent.module.css';  // Aqui importa o arquivo CSS
 
 const GITHUB_REPO = "https://api.github.com/repos/andremadu/devscopeui/contents/components/";
 const GITHUB_TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
