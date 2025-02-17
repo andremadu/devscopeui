@@ -8,11 +8,10 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
     "test": "vitest",
-    "vercel-build": "npm run build-storybook",
-    "generate-stories": "node generate-stories.js",
-    "build-storybook": "npm run generate-stories && build-storybook -o storybook-static",
-    "storybook": "npm run generate-stories && storybook dev -p 6006"
+    "vercel-build": "npm run build-storybook"
   },
   "dependencies": {
     "child_process": "^1.0.2",

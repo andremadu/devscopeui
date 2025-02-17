@@ -25,9 +25,3 @@ dist-ssr
 
 .vercel
 
-node_modules/
-storybook-static/
-dist/
-.turbo/
-.cache/
-.DS_Store
