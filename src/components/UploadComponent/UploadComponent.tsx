@@ -27,10 +27,13 @@ const UploadComponent = () => {
         })
       });
 
+      const result = await response.json(); // Captura a resposta do GitHub
+      console.log("GitHub API Response:", result); // Mostra a resposta na consola
+      
       if (response.ok) {
         alert("Componente enviado para o GitHub!");
       } else {
-        alert("Erro ao enviar componente.");
+        alert("Erro ao enviar componente: " + JSON.stringify(result)); // Exibe o erro real
       }
     };
   };
