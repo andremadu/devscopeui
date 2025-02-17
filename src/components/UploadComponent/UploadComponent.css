@@ -1,65 +1,60 @@
 /* Estilo para o componente de upload */
 .upload-container {
-  max-width: 600px; /* Limita a largura máxima */
-  margin: 0 auto; /* Centraliza o conteúdo */
-  padding: 30px;
+  max-width: 800px; /* Aumenta a largura máxima */
+  margin: 50px auto; /* Centraliza e cria margem no topo */
+  padding: 40px;
   background-color: #ffffff; /* Cor de fundo mais limpa */
   border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombras mais suaves */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave ao focar */
-}
-
-.upload-container:hover {
-  transform: translateY(-5px); /* Animação ao passar o mouse */
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Sombras mais intensas ao passar o mouse */
+  font-family: 'Arial', sans-serif; /* Usar uma fonte simples e clara */
 }
 
 .upload-container h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
   color: #333333;
 }
 
 .upload-container input {
-  padding: 12px;
-  border: 2px solid #ccc;
+  padding: 15px;
+  border: 2px solid #ddd;
   border-radius: 8px;
   margin-top: 20px;
   width: 100%;
-  max-width: 450px;
-  background-color: #f9f9f9;
-  font-size: 16px;
+  max-width: 600px; /* Maior largura para o input */
+  background-color: #f7f7f7;
+  font-size: 18px;
   transition: border-color 0.3s ease;
 }
 
 .upload-container input:focus {
-  border-color: #4CAF50; /* Cor do border ao focar */
+  border-color: #4CAF50; /* Cor de foco mais visível */
   outline: none;
 }
 
 .upload-container button {
   margin-top: 30px;
-  padding: 12px 30px;
+  padding: 15px 30px;
   background-color: #4CAF50;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .upload-container button:hover {
   background-color: #45a049;
-  transform: translateY(-3px); /* Efeito ao passar o mouse */
+  transform: translateY(-2px); /* Efeito suave ao passar o mouse */
 }
 
 .upload-container button:focus {
   outline: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Foco visível para acessibilidade */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Foco visível para acessibilidade */
 }
 
 .upload-container .alert {
@@ -89,14 +84,15 @@
 /* Responsividade para dispositivos menores */
 @media (max-width: 768px) {
   .upload-container {
-    padding: 20px;
+    padding: 25px;
+    width: 90%; /* Mais largura em dispositivos menores */
   }
 
   .upload-container input {
-    width: 90%; /* Ajuste no campo de input para dispositivos menores */
+    width: 100%; /* Ajuste no campo de input para dispositivos menores */
   }
 
   .upload-container button {
-    width: 90%; /* Botão também ajustado para responsividade */
+    width: 100%; /* Botão também ajustado para responsividade */
   }
 }
