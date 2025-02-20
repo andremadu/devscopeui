@@ -1,4 +1,5 @@
-import { test } from "./test";
+import Test from "./test";
+
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof test> = {
